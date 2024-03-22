@@ -19,7 +19,7 @@ body {
     overflow-x: hidden;
 
 }
-
+/*Navbar */
 header {
     background-color: rgba(14, 215, 215, 0.288);
     isolation: isolate;
@@ -73,6 +73,8 @@ nav {
     width: 50%
 }
 
+
+/*hero section */
 .centered-content h1 {
     color: aqua;
     font-size: 50px;
@@ -216,4 +218,12 @@ a {
     width: 100px;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+/* Mobile Design */
+
+@media only screen and (max-width:767px){
+    .nav__links{
+    }
 }
