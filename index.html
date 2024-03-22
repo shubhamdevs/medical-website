@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <title>Peace of Mon</title>
 </head>
+
 <body>
-    <header >
+    <header>
         <nav>
             <div class="nav__logo">
                 <a href="#"><img src="" alt="Peace of Mon Logo"></a>
             </div>
-            <ul class="nav__links">
-                <li class="link"><a href="./index.html">Home</a></li>
-                <li class="link"><a href="./about.html">About</a></li>
-                <li class="link"><a href="./services.html">Services</a></li>
-                <li class="link"><a href="./contact.html">Contact</a></li>
-                <li class="link"><a href="#blog">Blog</a></li>
-            </ul> 
+            <div class="cross-div">
+                <div onclick="closeNavMenu()" class="close-icon "></div>
+            </div>
+            <div class="menu-div">
+                <input onclick="openNavMenu()" type="checkbox" role="button" aria-label="Display the menu"
+                    class="menu ">
+            </div>
+            <div class="nav_menu_container">
+                <ul class="nav__links " id="nav__menus">
+                    <li class="link"><a href="./index.html">Home</a></li>
+                    <li class="link"><a href="./about.html">About</a></li>
+                    <li class="link"><a href="./services.html">Services</a></li>
+                    <li class="link"><a href="./contact.html">Contact</a></li>
+                    <li class="link"><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+
         </nav>
     </header>
 
     <main>
         <section class="hero-section">
-            
+
             <div class="slider-container">
                 <div class="slider">
                     <img src="assets/images/01_hands.jpg" class="slider__img" alt="Image 1">
@@ -37,12 +51,12 @@
                     <img src="assets/images/05-stress-jelly.jpg" class="slider__img" alt="Image 5">
                 </div>
                 <div class="centered-content">
-                        <h1>Psychology Clinic</h1>
-                        <button class="main-btn" id="main-btn"> Get an Appoinment</button>
-                    </div>
+                    <h1>Psychology Clinic</h1>
+                    <button class="main-btn" id="main-btn"> Get an Appoinment</button>
+                </div>
             </div>
-             <button class="slider-btn prev" onclick="prevSlide()">&#10094;</button>
-                <button class="slider-btn next" onclick="nextSlide()">&#10095;</button>
+            <button class="slider-btn prev" onclick="prevSlide()">&#10094;</button>
+            <button class="slider-btn next" onclick="nextSlide()">&#10095;</button>
         </section>
         <section class="content-section">
             <h1>Peace of Mon</h1>
@@ -53,53 +67,65 @@
                 </div>
 
                 <div class="article">
-                    <p>Welcome to Peace of Mon, your dedicated psychological counselling center in Kolkata. Led by experienced psychologists, Peace of Mon offers holistic treatment for a wide range of psychological issues without the use of medication.</p>
-                    <p>At Peace of Mon, we understand the importance of providing a safe and confidential space for you to express your delicate emotions. Our empathetic approach ensures that you feel heard and understood as we work together to address your concerns.</p>
-                    <p>Our goal is to empower you to overcome psychological challenges by fostering self-awareness, self-exploration, and self-esteem. Through personalized guidance and support, we aim to build your confidence, equipping you with the tools to navigate life's ups and downs with resilience.</p>
-                    <p>Utilizing advanced techniques and promoting positive thoughts, the best psychologist in Kolkata at Peace of Mon helps you incorporate beneficial practices into your lifestyle.
+                    <p>Welcome to Peace of Mon, your dedicated psychological counselling center in Kolkata. Led by
+                        experienced psychologists, Peace of Mon offers holistic treatment for a wide range of
+                        psychological issues without the use of medication.</p>
+                    <p>At Peace of Mon, we understand the importance of providing a safe and confidential space for you
+                        to express your delicate emotions. Our empathetic approach ensures that you feel heard and
+                        understood as we work together to address your concerns.</p>
+                    <p>Our goal is to empower you to overcome psychological challenges by fostering self-awareness,
+                        self-exploration, and self-esteem. Through personalized guidance and support, we aim to build
+                        your confidence, equipping you with the tools to navigate life's ups and downs with resilience.
+                    </p>
+                    <p>Utilizing advanced techniques and promoting positive thoughts, the best psychologist in Kolkata
+                        at Peace of Mon helps you incorporate beneficial practices into your lifestyle.
                     </p>
                 </div>
             </div>
         </section>
         <section class="end-point">
             <div class="text-nodes">
-                <p class="">Experience positive change with Peace of Mon. Our services cater to individuals, couples, children, and teens, offering online, telephonic, home, and face-to-face counselling options.</p>
-                <p class="">Take the first step towards a more beautiful life with Peace of Mon, your trusted partner for psychological well-being in Kolkata.</p>
+                <p class="">Experience positive change with Peace of Mon. Our services cater to individuals, couples,
+                    children, and teens, offering online, telephonic, home, and face-to-face counselling options.</p>
+                <p class="">Take the first step towards a more beautiful life with Peace of Mon, your trusted partner
+                    for psychological well-being in Kolkata.</p>
             </div>
             <div class="secondary-button">
                 <button class="main-btn" id="main-btn">Get An Appoinment</button>
             </div>
-            
+
         </section>
     </main>
     <footer>
-        <section>
-            <div>
+        <section class="footer-container">
+            <div class="footer-address">
                 <p>Charakdanga Barasat, Kolkata-700124</p>
                 <p>Beside Natun Pukur Ration Shop</p>
                 <p>Ph. no: 9875640715 </p>
             </div>
 
             <div class="icon-links">
-
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./services.html">Services</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                </ul> 
-            </nav>
+
         </section>
         <div class="copy-right">
-            <p>This is copy right <span class="date"></span></p>
-            <p class="brand-plugin">Crafted and Designed by <span class="brand-design"><a href="https://www.google.com" target="_blank">ABC Studios</a></span></p>
+            <p>&copy 2024 All right reserved.<span class="date"></span></p>
+            <p class="brand-plugin">Crafted and Designed by <span class="brand-design"><a href="https://www.google.com"
+                        target="_blank">ABC Studios</a></span></p>
         </div>
     </footer>
 
 
-<script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>

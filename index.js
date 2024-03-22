@@ -21,5 +21,19 @@ function prevSlide() {
     showSlide(slideIndex);
 }
 
+function openNavMenu() {
+    document.querySelector('.nav_menu_container').classList.add('open_nav_menu_container');
+    document.querySelector('.menu-div').classList.add('open');
+    document.querySelector('.cross-div').style.display = 'block'; // Display the close icon
+}
+
+function closeNavMenu() {
+    document.querySelector('.nav_menu_container').classList.remove('open_nav_menu_container');
+    document.querySelector('.menu-div').classList.remove('open');
+    document.querySelector('.cross-div').style.display = 'none'; // Hide the close icon
+}
+
+
+
 showSlide(slideIndex);
 

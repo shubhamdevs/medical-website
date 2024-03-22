@@ -3,17 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <title>Contact Us</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="nav__logo">
+                <a href="#"><img src="" alt="Peace of Mon Logo"></a>
+            </div>
+            <div class="cross-div">
+                <div onclick="closeNavMenu()" class="close-icon "></div>
+            </div>
+            <div class="menu-div">
+                <input onclick="openNavMenu()" type="checkbox" role="button" aria-label="Display the menu"
+                    class="menu ">
+            </div>
+            <div class="nav_menu_container">
+                <ul class="nav__links " id="nav__menus">
+                    <li class="link"><a href="./index.html">Home</a></li>
+                    <li class="link"><a href="./about.html">About</a></li>
+                    <li class="link"><a href="./services.html">Services</a></li>
+                    <li class="link"><a href="./contact.html">Contact</a></li>
+                    <li class="link"><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
     <div class="main-contact-us-container">
         <h1>Contact Us</h1>
         <div class="map-section">
-
+            <div id="map-container">
+                <!-- Paste the embedded map code here -->
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387073.9513109582!2d-74.25908774500122!3d40.69767000542399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1648761378148!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </div>
         <div class="address-section">
-            
+            <form>
+                <label for="address">Address:</label><br>
+                <input type="text" id="address" name="address"><br><br>
+        
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"><br><br>
+        
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+        
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </div>
+
+    <footer>
+        <section class="footer-container">
+            <div class="footer-address">
+                <p>Charakdanga Barasat, Kolkata-700124</p>
+                <p>Beside Natun Pukur Ration Shop</p>
+                <p>Ph. no: 9875640715 </p>
+            </div>
+
+            <div class="icon-links">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </section>
+        <div class="copy-right">
+            <p>&copy 2024 All right reserved.<span class="date"></span></p>
+            <p class="brand-plugin">Crafted and Designed by <span class="brand-design"><a href="https://www.google.com"
+                        target="_blank">ABC Studios</a></span></p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
 </body>
 </html>
